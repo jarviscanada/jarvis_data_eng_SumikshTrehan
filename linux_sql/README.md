@@ -39,6 +39,44 @@ The system uses a **hub-and-spoke** model:
 
 Each agent independently pushes data to the same database endpoint over the network.
 
+```mermaid
+graph TB
+
+    subgraph "Managed Infrastructure"
+        direction LR
+        Node1[Linux Host 1]
+        Node2[Linux Host 2]
+        NodeN[Linux Host N...]
+    end
+
+    subgraph "Local Monitoring Agent"
+        direction TB
+        Info[host_info.sh<br/><i>Hardware Specs</i>]
+        Usage[host_usage.sh<br/><i>Resource Metrics</i>]
+        Cron((Crontab<br/>Interval: 1m))
+        
+        Cron -.-> Usage
+    end
+
+    subgraph "Central Management Node"
+        direction TB
+        Docker[Docker Engine]
+        DB[(PostgreSQL Database)]
+        Docker --> DB
+    end
+
+    %% Data Flow
+    Node1 & Node2 & NodeN === Info
+    Node1 & Node2 & NodeN === Usage
+
+    Info -- "One-time Setup" --> DB
+    Usage -- "Continuous Telemetry" --> DB
+
+    %% Styling
+    style DB fill:#f9f,stroke:#333,stroke-width:2px
+    style Docker fill:#2496ed,color:#fff
+    style Cron fill:#fff,stroke:#333,stroke-dasharray: 5 5
+```
 ---
 
 ## Quick Start
@@ -64,37 +102,3 @@ crontab -e
 ```
 
 ---
-
-## Diagram
-```mermaid
-graph TD
-    subgraph "Managed Linux Nodes (Agents)"
-        Node1[Linux Host 1]
-        Node2[Linux Host 2]
-        Node3[Linux Host 3]
-    end
-
-    subgraph "Agent Scripts per Node"
-        direction TB
-        A1[host_info.sh<br/>Static Hardware Specs]
-        A2[host_usage.sh<br/>Real-time Metrics]
-        CRON[Crontab<br/>Schedules usage every 1m]
-    end
-
-    subgraph "Central Management Node"
-        DOCKER[Docker Container]
-        DB[(PostgreSQL Database)]
-        DOCKER --> DB
-    end
-
-    %% Connections
-    Node1 & Node2 & Node3 --> A1
-    Node1 & Node2 & Node3 --> A2
-    CRON --> A2
-    
-    A1 -- "Insert Specs (Once)" --> DB
-    A2 -- "Insert Usage (Every minute)" --> DB
-
-    style DB fill:#f9f,stroke:#333,stroke-width:2px
-    style DOCKER fill:#2496ed,color:#fff
-```
