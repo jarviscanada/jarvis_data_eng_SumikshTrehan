@@ -61,3 +61,36 @@ psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 crontab -e
 # Add the following line to sync every minute:
 # * * * * * bash /absolute/path/to/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" > /tmp/host_usage.log 2>&1
+
+```mermaid
+graph TD
+    subgraph "Managed Linux Nodes (Agents)"
+        Node1[Linux Host 1]
+        Node2[Linux Host 2]
+        Node3[Linux Host 3]
+    end
+
+    subgraph "Agent Scripts per Node"
+        direction TB
+        A1[host_info.sh<br/>Static Hardware Specs]
+        A2[host_usage.sh<br/>Real-time Metrics]
+        CRON[Crontab<br/>Schedules usage every 1m]
+    end
+
+    subgraph "Central Management Node"
+        DOCKER[Docker Container]
+        DB[(PostgreSQL Database)]
+        DOCKER --> DB
+    end
+
+    %% Connections
+    Node1 & Node2 & Node3 --> A1
+    Node1 & Node2 & Node3 --> A2
+    CRON --> A2
+    
+    A1 -- "Insert Specs (Once)" --> DB
+    A2 -- "Insert Usage (Every minute)" --> DB
+
+    style DB fill:#f9f,stroke:#333,stroke-width:2px
+    style DOCKER fill:#2496ed,color:#fff
+```
