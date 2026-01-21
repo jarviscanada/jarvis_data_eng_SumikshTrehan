@@ -6,7 +6,7 @@ The **Jarvis Remote Host Monitoring Agent** is a professional-grade infrastructu
 
 It follows a lightweight **agent-based architecture**, where each node runs simple Bash scripts that push system telemetry to a centralized **PostgreSQL** database running inside **Docker**. This solution enables System Administrators and DevOps Engineers to monitor server health, detect performance bottlenecks, and make data-driven scaling decisionswithout manual checks.
 
-### Key Capabilities
+## Key Capabilities
 - Automatic hardware inventory
 - Continuous resource monitoring (CPU, memory, disk)
 - Centralized PostgreSQL data store
@@ -62,6 +62,9 @@ crontab -e
 # Add the following line to sync every minute:
 # * * * * * bash /absolute/path/to/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" > /tmp/host_usage.log 2>&1
 
+---
+
+## Diagram
 ```mermaid
 graph TD
     subgraph "Managed Linux Nodes (Agents)"
