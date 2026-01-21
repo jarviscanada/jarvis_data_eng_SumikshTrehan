@@ -61,6 +61,7 @@ psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 crontab -e
 # Add the following line to sync every minute:
 # * * * * * bash /absolute/path/to/host_usage.sh "localhost" 5432 "host_agent" "postgres" "password" > /tmp/host_usage.log 2>&1
+```
 
 ---
 
