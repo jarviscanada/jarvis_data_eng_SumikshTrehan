@@ -15,7 +15,6 @@ vmstat_mb=$(vmstat --unit M)
 hostname=$(hostname -f)
 
 # Extracting metrics from the variables
-cpu_user=$(echo "$vmstat_mb"| tail -n1 | awk '{print $13}')
 memory_free=$(echo "$vmstat_mb" | awk '{print $4}' | tail -n1 | xargs)
 cpu_idle=$(echo "$vmstat_mb" | tail -n1 | awk '{print $15}')
 cpu_kernel=$(echo "$vmstat_mb" | tail -n1 | awk '{print $14}')
@@ -31,8 +30,8 @@ timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 host_id="(SELECT id FROM host_info WHERE hostname='$hostname')"
 
 # PSQL command (Using ONLY your variables)
-insert_stmt="INSERT INTO host_usage(timestamp, host_id, memory_free, cpu_idle, cpu_kernel, cpu_user, disk_io, disk_available) 
-VALUES('$timestamp', $host_id, $memory_free, $cpu_idle, $cpu_kernel, $cpu_user, $disk_io, $disk_available);"
+insert_stmt="INSERT INTO host_usage(timestamp, host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available) 
+VALUES('$timestamp', $host_id, $memory_free, $cpu_idle, $cpu_kernel, $disk_io, $disk_available);"
 
 # Execute
 export PGPASSWORD=$psql_password
