@@ -1,21 +1,29 @@
+# SQL Query Practice
+
 # Introduction
-# SQL Queries
+This project contains a collection of SQL queries developed as part of the Jarvis Consulting Data Engineering training. The queries are designed to solve various data retrieval and analysis problems using a sample relational database.
 
-###### Table Setup (DDL)
+# Database Schema
+The queries are written for a database involving:
+- **Members**: Personal details and registration info.
+- **Facilities**: Information about various gym/club facilities.
+- **Bookings**: Records of facility usage by members.
 
-###### Question 1: Show all members 
-```sql
-SELECT *
-FROM cd.members
-```
+#### SQL Queries Included
+The `queries.sql` file contains solutions for:
+1. **Basic Data Retrieval**: Filtering and sorting records.
+2. **Joins and Subqueries**: Combining data across multiple tables.
+3. **Aggregations**: Using `GROUP BY`, `SUM`, and `COUNT` for reporting.
+4. **Window Functions**: Performing complex analysis like ranking or running totals (if applicable).
 
-###### Question 2: Lorem ipsum...
+#### How to Run the Queries
+1. Ensure you have a PostgreSQL instance or docker postgres server running.
+2. Connect to your database using `psql`.
+3. Run the script. First run the postgres server on docker on expose on port 5432 and then from local linux machine run psql client side:
+   psql-h locahost -U postgres -d exercises -p 5432 -f queries.sql 
 
-```sql
-SELECT blah blah
-```
 
-###### CREATE TABLES 
+# CREATE TABLES 
 ```sql
 CREATE TABLE cd.members (
   memid integer NOT NULL, 
@@ -58,4 +66,4 @@ CREATE TABLE cd.bookings (
   CONSTRAINT fk_bookings_facid FOREIGN KEY (facid) REFERENCES cd.facilities(facid), 
   CONSTRAINT fk_bookings_memid FOREIGN KEY (memid) REFERENCES cd.members(memid)
 );
-```
+``` 
