@@ -23,7 +23,8 @@ The `queries.sql` file contains solutions for:
    psql-h locahost -U postgres -d exercises -p 5432 -f queries.sql 
 
 
-# CREATE TABLES 
+# CREATE TABLES
+###### CREATE TABLE 
 ```sql
 CREATE TABLE cd.members (
   memid integer NOT NULL, 
