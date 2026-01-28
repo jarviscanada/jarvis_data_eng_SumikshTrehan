@@ -120,7 +120,7 @@ education:
 #Optional section
 others:
     #category
-  - title: "Linkedin Certificates"
+  - title: "Certificates"
     #list of items
     bullets:
       - "Learning Docker"
