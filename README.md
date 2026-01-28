@@ -42,9 +42,13 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SumikshTre
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis (2023-2025)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Engineer, Jarvis (Jan 2025-Present)**: As an Infrastructure and Data Engineer within the Jarvis environment, I was responsible for architecting and maintaining a distributed monitoring ecosystem that bridges the gap between Linux machines  and centralized data analytics. Your work focuses on automating hardware inventory and resource tracking across multiple nodes to ensure high availability and operational visibility.
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Junior Programmer Co-op, Ontario Public Service (Jan 2025-Apr 2025)**: As a Junior Programmer Co-op at the Ontario Public Services (TBS Branch) , I engineered a Python automation script using Selenium and Pandas that increased data reporting speed by 85% and saved 20 minutes of manual labor per report. I contributed to system reliability by conducting end-to-end functional testing on over four government tax and dental workflows, resolving logic defects through daily vendor standups. Additionally, I served as a Technical SME, streamlining vendor software alignment by providing critical logic clarifications to ensure all systems remained compliant with Ontario Government program requirements.
+
+**Android Developer Co-op, CIBC (May 2024-Aug 2024)**: At CIBC, as an Android Developer Co-op, I developed and deployed a Kotlin-based gamification feature that boosted user retention by enabling in-app point earning through engagement. I integrated Adobe Analytics to provide real-time user behavior and feature performance insights, driving data-informed product decisions. By managing user stories and defects in JIRA and maintaining comprehensive sprint documentation in Confluence, I accelerated Agile delivery cycles.
+
+**Claret Asset Management, IT Specialist (Jun 2022-Jan 2023)**: As a Junior Programmer Co-op at Ontario Public Services, I engineered Python ETL scripts using Selenium to automate the scraping and storage of over 250 documents into a MySQL database, saving 8+ hours of weekly labor. I modernized legacy infrastructure by migrating SSIS workflows to Python, significantly enhancing system scalability and maintainability. Additionally, I played a key role in facilitating an Azure Cloud migration, collaborating with cross-functional teams and vendors to transition on-premises workloads. I also ensured 100% data integrity for an Angular-based onboarding application by providing backend database support and real-time record synchronization.
 
 
 ## Education
