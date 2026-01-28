@@ -12,25 +12,27 @@ summary: I am a Software Developer and Data Analyst with an academic foundation 
 skills:
   # At least 5 skills
   proficient:
-    - JavaScript
+    - JavaScript (Next JS, React, Node.JS)
     - Linux/Bash
     - RDBMS/SQL
     - Agile/Scrum
     - Git
+    - GCP
+    - Docker
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
+    - Next.js
+    - React
+    - Azure(Cloud, Data Factory)
+    - Kotlin/Android Development
+    - ETL Pipelines(Python, SSIS)
   # At least 5 skills
   familiar:
-    - Donec
-    - fermentum
-    - fermentum
-    - fermentum
-    - fermentum
+    - AWS, Azure
+    - C#
+    - C, C++
+    - Perl
+    - Cobol
 
 # List of Jarvis projects
 jarvis_projects:
@@ -38,7 +40,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+    description: The Jarvis Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
@@ -79,9 +81,9 @@ highlighted_projects:
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
-  - title: "Software Developer"
+  - title: "Data Engineer"
     company: "Jarvis"
-    duration: "2020-present"
+    duration: "2023-2025"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
   - title: "Tutor"
@@ -91,33 +93,52 @@ professional_experience:
 
 #List of edcuation
 education: 
-  - school_name: "XYZ university"
-    duration: "2012-2016"
-    degree: "Bachelor of Applied Sciences"
+  - school_name: "Seneca Polytechnic College"
+    duration: "2023-2025"
+    degree: "Honours Bachelor of Technology - Software Development(BSD)"
     department: "Electrical and Computer Engineering"
     # optional
     awards_achievements: 
       - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
+      - "Dean's List"
       - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
+  - school_name: "Seneca Polytechnic College"
+    duration: "2020-2023"
+    degree: "Diploma - Computer Programming"
     department: "Electrical and Computer Engineering"
-    awards_achievements: 
+    awards_achievements:
+      - "Scholarship"
+      - "GPA: 3.2/4.0"
+  - school_name: "Georgian College"
+    duration: "2015-2017"
+    degree: "Diploma - Electrical Engineering"
+    department: "Electrical Engineering"
+    awards_achievements:
+      - "Scholarship"
+      - "GPA: 3.8/4.0"
 
 #Optional section
 others:
     #category
-  - title: "Certificates"
+  - title: "Linkedin Certificates"
     #list of items
     bullets:
-      - "Udacity Machine Learning (2019)"
-  - title: "Awards"
+      - "Learning Docker"
+      - "Change Management Foundations"
+      - "Data Engineering"
+      - "Learning Power Automate Desktop"
+      - "Power BI Dashboards"
+      - "Advanced Snowflake"
+      - "Apache Kafka"
+      - "Data Engineering"
+      - "Azure Spark Databricks"
+      - "Learning Apache Airflow"
+      - "Intro to Spark SQL and DataFrames"
+  - title: "DataCamp Certificates"
     bullets:
-      - "Winner"
+      - "Object Oriented Programming in Python"
+      - "Introduction to Python"
   - title: "Activities/Hobbies"
     bullets:
-      - "Basketball player"
-      - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Sports Enthusiast Basketball player"
+      - "Volunteer"
