@@ -3,20 +3,33 @@
     {
       "awards_achievements": [
         "Scholarship",
-        "Dean's List (2015, 2016): Ut enim ad minim veniam",
+        "Dean's List",
         "GPA: 3.8/4.0"
       ],
-      "degree": "Bachelor of Applied Sciences",
+      "degree": "Honours Bachelor of Technology - Software Development(BSD)",
       "department": "Electrical and Computer Engineering",
-      "duration": "2012-2016",
-      "school_name": "XYZ university"
+      "duration": "2023-2025",
+      "school_name": "Seneca Polytechnic College"
     },
     {
-      "awards_achievements": null,
-      "degree": "Master of Engineering",
+      "awards_achievements": [
+        "Scholarship",
+        "GPA: 3.2/4.0"
+      ],
+      "degree": "Diploma - Computer Programming",
       "department": "Electrical and Computer Engineering",
-      "duration": "2016-2018",
-      "school_name": "XYZ university"
+      "duration": "2020-2023",
+      "school_name": "Seneca Polytechnic College"
+    },
+    {
+      "awards_achievements": [
+        "Scholarship",
+        "GPA: 3.8/4.0"
+      ],
+      "degree": "Diploma - Electrical Engineering",
+      "department": "Electrical Engineering",
+      "duration": "2015-2017",
+      "school_name": "Georgian College"
     }
   ],
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan",
@@ -34,7 +47,7 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "The Jarvis Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
@@ -77,21 +90,31 @@
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
+        "Learning Docker",
+        "Change Management Foundations",
+        "Data Engineering",
+        "Learning Power Automate Desktop",
+        "Power BI Dashboards",
+        "Advanced Snowflake",
+        "Apache Kafka",
+        "Data Engineering",
+        "Azure Spark Databricks",
+        "Learning Apache Airflow",
+        "Intro to Spark SQL and DataFrames"
       ],
-      "title": "Certificates"
+      "title": "Linkedin Certificates"
     },
     {
       "bullets": [
-        "Winner"
+        "Object Oriented Programming in Python",
+        "Introduction to Python"
       ],
-      "title": "Awards"
+      "title": "DataCamp Certificates"
     },
     {
       "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Sports Enthusiast Basketball player",
+        "Volunteer"
       ],
       "title": "Activities/Hobbies"
     }
@@ -100,8 +123,8 @@
     {
       "company": "Jarvis",
       "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2020-present",
-      "title": "Software Developer"
+      "duration": "2023-2025",
+      "title": "Data Engineer"
     },
     {
       "company": "XYZ Company",
@@ -112,25 +135,27 @@
   ],
   "skills": {
     "competent": [
-      "Donec",
-      "fermentum",
-      "Donec",
-      "fermentum",
-      "Donec"
+      "Next.js",
+      "React",
+      "Azure(Cloud, Data Factory)",
+      "Kotlin/Android Development",
+      "ETL Pipelines(Python, SSIS)"
     ],
     "familiar": [
-      "Donec",
-      "fermentum",
-      "fermentum",
-      "fermentum",
-      "fermentum"
+      "AWS, Azure",
+      "C#",
+      "C, C++",
+      "Perl",
+      "Cobol"
     ],
     "proficient": [
-      "JavaScript",
+      "JavaScript (Next JS, React, Node.JS)",
       "Linux/Bash",
       "RDBMS/SQL",
       "Agile/Scrum",
-      "Git"
+      "Git",
+      "GCP",
+      "Docker"
     ]
   },
   "summary": "I am a Software Developer and Data Analyst with an academic foundation consisting of an Honours Bachelor of Technology in Software Development and a Computer Programming Diploma from Seneca Polytechnic, alongside an Electrical Engineering Diploma from Georgian College. Professionally, I increased data reporting speed by 85% at Ontario Public Services by engineering Python automation scripts , and I built Kotlin-based mobile features and Adobe Analytics integrations as an Android Developer at CIBC. My experience extends to Claret Asset Management, where I modernized infrastructure by migrating legacy SSIS workflows to Python ETL pipelines on Azure , and Canada's Wonderland, where I secured network infrastructure and maintained over 2,000 POS endpoints."
