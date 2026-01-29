@@ -52,7 +52,7 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Jarvis Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.",
+      "description": "Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
