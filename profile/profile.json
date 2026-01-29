@@ -35,19 +35,24 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan",
   "highlighted_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": "Web app for resturant"
+      "description": "Built a modern, theme-aware portfolio using Next.js, Tailwind CSS, and Three.js featuring a chatbot UI for resume-related Q\u0026A and interactive portfolio cards.",
+      "git_url": "https://github.com/Sumiksh/sumikshtportfolio.git",
+      "name": "Web Porfolio"
     },
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": null,
-      "name": "Machine Learning"
+      "description": "Engineered a medication tracker using Next.js 15, Firebase, and Gemini 2.5 Flash for AI visual pill verification while integrating RxCUI identifiers to fetch real-time drug precautions.",
+      "git_url": "https://github.com/Sumiksh/PillReminders.git",
+      "name": "Pill Scheduler"
+    },
+    {
+      "description": "Developed a Python and OpenCV pipeline to track motion in sports footage via frame differencing and viewport tracking to generate annotated analysis videos.",
+      "git_url": "https://github.com/Sumiksh/dps920finalproject.git",
+      "name": "Sports Motion Detection and Tracking"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "The Jarvis Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.",
+      "description": "Jarvis Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },

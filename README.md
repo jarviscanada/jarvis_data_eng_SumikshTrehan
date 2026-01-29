@@ -15,7 +15,7 @@ I am a Software Developer and Data Analyst with an academic foundation consistin
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/linux_sql)]: The Jarvis Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/linux_sql)]: Jarvis Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/core_java)]:
       
@@ -35,9 +35,11 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SumikshTre
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Web Porfolio** [[GitHub](https://github.com/Sumiksh/sumikshtportfolio.git)]: Built a modern, theme-aware portfolio using Next.js, Tailwind CSS, and Three.js featuring a chatbot UI for resume-related Q&A and interactive portfolio cards.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Pill Scheduler** [[GitHub](https://github.com/Sumiksh/PillReminders.git)]: Engineered a medication tracker using Next.js 15, Firebase, and Gemini 2.5 Flash for AI visual pill verification while integrating RxCUI identifiers to fetch real-time drug precautions.
+
+**Sports Motion Detection and Tracking** [[GitHub](https://github.com/Sumiksh/dps920finalproject.git)]: Developed a Python and OpenCV pipeline to track motion in sports footage via frame differencing and viewport tracking to generate annotated analysis videos.
 
 
 ## Professional Experiences
