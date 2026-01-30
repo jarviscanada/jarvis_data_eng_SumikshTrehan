@@ -1,8 +1,8 @@
-# Jarvis Remote Host Monitoring Agent
+# Remote Host Monitoring Agent
 
 ## Overview
 
-The **Jarvis Remote Host Monitoring Agent** is a professional-grade infrastructure monitoring system designed to automatically collect hardware specifications and real-time resource utilization from distributed Linux servers.
+The **Remote Host Monitoring Agent** is a professional-grade infrastructure monitoring system designed to automatically collect hardware specifications and real-time resource utilization from distributed Linux servers.
 
 It follows a lightweight **agent-based architecture**, where each node runs simple Bash scripts that push system telemetry to a centralized **PostgreSQL** database running inside **Docker**. This solution enables System Administrators and DevOps Engineers to monitor server health, detect performance bottlenecks, and make data-driven scaling decisionswithout manual checks.
 
@@ -38,6 +38,38 @@ The system uses a **hub-and-spoke** model:
   A Dockerized PostgreSQL instance stores all telemetry data.
 
 Each agent independently pushes data to the same database endpoint over the network.
+
+---
+
+## Database Schema
+```sql
+-- Create host_info table to store hardware specifications
+CREATE TABLE IF NOT EXISTS host_info (
+    id               SERIAL PRIMARY KEY,
+    hostname         VARCHAR NOT NULL UNIQUE,
+    cpu_number       INT2 NOT NULL,
+    cpu_architecture VARCHAR NOT NULL,
+    cpu_model        VARCHAR NOT NULL,
+    cpu_mhz          FLOAT8 NOT NULL,
+    l2_cache         INT4 NOT NULL,
+    total_mem        INT4 NOT NULL,
+    "timestamp"      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create host_usage table to store time-series resource metrics
+CREATE TABLE IF NOT EXISTS host_usage (
+    "timestamp"    TIMESTAMP NOT NULL,
+    host_id        SERIAL REFERENCES host_info(id),
+    memory_free    INT4 NOT NULL,
+    cpu_idle       INT2 NOT NULL,
+    cpu_kernel     INT2 NOT NULL,
+    disk_io        INT4 NOT NULL,
+    disk_available INT4 NOT NULL,
+    
+    -- Creating a composite primary key or index is recommended for time-series data
+    PRIMARY KEY ("timestamp", host_id)
+);
+```
 
 ```mermaid
 graph TB
@@ -77,6 +109,7 @@ graph TB
     style Docker fill:#2496ed,color:#fff
     style Cron fill:#fff,stroke:#333,stroke-dasharray: 5 5
 ```
+
 ---
 
 ## Quick Start

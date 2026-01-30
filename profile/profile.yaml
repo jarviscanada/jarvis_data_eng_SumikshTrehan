@@ -1,0 +1,158 @@
+# Preferred name (Characters only)
+name: "Sumiksh Trehan"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: I am a Software Developer and Data Analyst with an academic foundation consisting of an Honours Bachelor of Technology in Software Development and a Computer Programming Diploma from Seneca Polytechnic, alongside an Electrical Engineering Diploma from Georgian College. Professionally, I increased data reporting speed by 85% at Ontario Public Services by engineering Python automation scripts , and I built Kotlin-based mobile features and Adobe Analytics integrations as an Android Developer at CIBC. My experience extends to Claret Asset Management, where I modernized infrastructure by migrating legacy SSIS workflows to Python ETL pipelines on Azure , and Canada's Wonderland, where I secured network infrastructure and maintained over 2,000 POS endpoints.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - JavaScript (Next JS, React, Node.JS)
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+    - GCP
+    - Docker
+  # At least 5 skills
+  competent:
+    - Next.js
+    - React
+    - Azure(Cloud, Data Factory)
+    - Kotlin/Android Development
+    - ETL Pipelines(Python, SSIS)
+  # At least 5 skills
+  familiar:
+    - AWS, Azure
+    - C#
+    - C, C++
+    - Perl
+    - Cobol
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description:
+      Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.
+
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "Web Porfolio"
+    #URL is optional
+    git_url: "https://github.com/Sumiksh/sumikshtportfolio.git"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Built a modern, theme-aware portfolio using Next.js, Tailwind CSS, and Three.js featuring a chatbot UI for resume-related Q&A and interactive portfolio cards.
+
+  - name: "Pill Scheduler"
+    git_url: "https://github.com/Sumiksh/PillReminders.git"
+    description: Engineered a medication tracker using Next.js 15, Firebase, and Gemini 2.5 Flash for AI visual pill verification while integrating RxCUI identifiers to fetch real-time drug precautions.
+
+  - name: "Sports Motion Detection and Tracking"
+    git_url: "https://github.com/Sumiksh/dps920finalproject.git"
+    description: Developed a Python and OpenCV pipeline to track motion in sports footage via frame differencing and viewport tracking to generate annotated analysis videos.
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Data Engineer"
+    company: "Jarvis"
+    duration: "Jan 2025-Present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "As an Infrastructure and Data Engineer within the Jarvis environment, I was responsible for architecting and maintaining a distributed monitoring ecosystem that bridges the gap between Linux machines  and centralized data analytics. Your work focuses on automating hardware inventory and resource tracking across multiple nodes to ensure high availability and operational visibility."
+  - title: "Junior Programmer Co-op"
+    company: "Ontario Public Service"
+    duration: "Jan 2025-Apr 2025"
+    description: "As a Junior Programmer Co-op at the Ontario Public Services (TBS Branch) , I engineered a Python automation script using Selenium and Pandas that increased data reporting speed by 85% and saved 20 minutes of manual labor per report. I contributed to system reliability by conducting end-to-end functional testing on over four government tax and dental workflows, resolving logic defects through daily vendor standups. Additionally, I served as a Technical SME, streamlining vendor software alignment by providing critical logic clarifications to ensure all systems remained compliant with Ontario Government program requirements."
+  - title: "Android Developer Co-op"
+    company: "CIBC"
+    duration: "May 2024-Aug 2024"
+    description: "At CIBC, as an Android Developer Co-op, I developed and deployed a Kotlin-based gamification feature that boosted user retention by enabling in-app point earning through engagement. I integrated Adobe Analytics to provide real-time user behavior and feature performance insights, driving data-informed product decisions. By managing user stories and defects in JIRA and maintaining comprehensive sprint documentation in Confluence, I accelerated Agile delivery cycles."
+  - title: "Claret Asset Management"
+    company: "IT Specialist"
+    duration: "Jun 2022-Jan 2023"
+    description: "As a Junior Programmer Co-op at Ontario Public Services, I engineered Python ETL scripts using Selenium to automate the scraping and storage of over 250 documents into a MySQL database, saving 8+ hours of weekly labor. I modernized legacy infrastructure by migrating SSIS workflows to Python, significantly enhancing system scalability and maintainability. Additionally, I played a key role in facilitating an Azure Cloud migration, collaborating with cross-functional teams and vendors to transition on-premises workloads. I also ensured 100% data integrity for an Angular-based onboarding application by providing backend database support and real-time record synchronization."
+
+#List of edcuation
+education: 
+  - school_name: "Seneca Polytechnic College"
+    duration: "2023-2025"
+    degree: "Honours Bachelor of Technology - Software Development(BSD)"
+    department: "Electrical and Computer Engineering"
+    # optional
+    awards_achievements: 
+      - "Scholarship"
+      - "Dean's List"
+      - "GPA: 3.8/4.0"
+  - school_name: "Seneca Polytechnic College"
+    duration: "2020-2023"
+    degree: "Diploma - Computer Programming"
+    department: "Electrical and Computer Engineering"
+    awards_achievements:
+      - "Scholarship"
+      - "GPA: 3.2/4.0"
+  - school_name: "Georgian College"
+    duration: "2015-2017"
+    degree: "Diploma - Electrical Engineering"
+    department: "Electrical Engineering"
+    awards_achievements:
+      - "Scholarship"
+      - "GPA: 3.8/4.0"
+
+#Optional section
+others:
+    #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "Learning Docker"
+      - "Change Management Foundations"
+      - "Data Engineering"
+      - "Learning Power Automate Desktop"
+      - "Power BI Dashboards"
+      - "Advanced Snowflake"
+      - "Apache Kafka"
+      - "Data Engineering"
+      - "Azure Spark Databricks"
+      - "Learning Apache Airflow"
+      - "Intro to Spark SQL and DataFrames"
+  - title: "DataCamp Certificates"
+    bullets:
+      - "Object Oriented Programming in Python"
+      - "Introduction to Python"
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Sports Enthusiast Basketball player"
+      - "Volunteer"
