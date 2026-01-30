@@ -95,33 +95,11 @@
   "others": [
     {
       "bullets": [
-        "Learning Docker",
-        "Change Management Foundations",
-        "Data Engineering",
-        "Learning Power Automate Desktop",
-        "Power BI Dashboards",
-        "Advanced Snowflake",
-        "Apache Kafka",
-        "Data Engineering",
-        "Azure Spark Databricks",
-        "Learning Apache Airflow",
-        "Intro to Spark SQL and DataFrames"
+        "Linkedin Certifications: Learning Docker, Change Management Foundations, Data Engineering, Learning Power Automate Desktop, Power BI Dashboards, Advanced Snowflake, Apache Kafka, Data Engineering, Azure Spark Databricks, Learning Apache Airflow, Intro to Spark SQL and DataFrames",
+        "DataCamp Certificates: Object Oriented Programming in Python, Introduction to Python",
+        "Activities/Hobbies: Sports Enthusiast Basketball player, Volunteer"
       ],
       "title": "Certificates"
-    },
-    {
-      "bullets": [
-        "Object Oriented Programming in Python",
-        "Introduction to Python"
-      ],
-      "title": "DataCamp Certificates"
-    },
-    {
-      "bullets": [
-        "Sports Enthusiast Basketball player",
-        "Volunteer"
-      ],
-      "title": "Activities/Hobbies"
     }
   ],
   "professional_experience": [

@@ -69,18 +69,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SumikshTre
 
 
 ## Miscellaneous
-- Learning Docker
-- Change Management Foundations
-- Data Engineering
-- Learning Power Automate Desktop
-- Power BI Dashboards
-- Advanced Snowflake
-- Apache Kafka
-- Data Engineering
-- Azure Spark Databricks
-- Learning Apache Airflow
-- Intro to Spark SQL and DataFrames
-- Object Oriented Programming in Python
-- Introduction to Python
-- Sports Enthusiast Basketball player
-- Volunteer
+- Linkedin Certifications: Learning Docker, Change Management Foundations, Data Engineering, Learning Power Automate Desktop, Power BI Dashboards, Advanced Snowflake, Apache Kafka, Data Engineering, Azure Spark Databricks, Learning Apache Airflow, Intro to Spark SQL and DataFrames
+- DataCamp Certificates: Object Oriented Programming in Python, Introduction to Python
+- Activities/Hobbies: Sports Enthusiast Basketball player, Volunteer
