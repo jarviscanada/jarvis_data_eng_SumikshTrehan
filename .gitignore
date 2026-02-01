@@ -1,0 +1,11 @@
+# Ignore npm cache and dependencies
+.npm/
+node_modules/
+package-lock.json
+
+# Ignore Python specific files
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
