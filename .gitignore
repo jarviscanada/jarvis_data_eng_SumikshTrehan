@@ -9,3 +9,8 @@ __pycache__/
 *$py.class
 .venv/
 env/
+
+.local/
+.jupyter/
+.cache/
+.config/
