@@ -14,3 +14,7 @@ env/
 .jupyter/
 .cache/
 .config/
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+.ipython/
