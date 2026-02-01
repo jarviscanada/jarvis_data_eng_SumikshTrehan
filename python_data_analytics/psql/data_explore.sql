@@ -28,7 +28,9 @@ FROM (
     GROUP BY invoice_no 
     HAVING SUM(quantity*unit_price ) > 0
 ) AS subquery;
+
 --OR CTE
+
 WITH InvoiceTotals AS (
     SELECT  
         SUM(quantity*unit_price) AS total_invoice_amount
