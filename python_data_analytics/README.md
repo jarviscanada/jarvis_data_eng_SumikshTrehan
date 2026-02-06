@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 As a Data Engineer at Jarvis Consulting, I am leading a Proof of Concept (PoC) for London Gift Shop (LGS), a UK-based online retailer facing stagnant revenue growth despite ten years of operation. My role is to bridge the gap between their existing transactional data and the marketing team's need for advanced insights, especially since their internal IT department lacks the resources to take on new projects.
 
 LGS will utilize my analytical results to move away from generic sales tactics toward data-driven, targeted marketing. Specifically, they will use my findings to develop precision campaignssuch as tailored email promotions and exclusive eventsaimed at acquiring new customers and retaining high-value wholesalers.
@@ -55,7 +55,7 @@ For Low Monetary: The goal here is to increase the Average Order Value (AOV). Th
 
 By categorizing customers into segments like "Champions" or "At-Risk," I provide the marketing team with the exact list of users who need either loyalty rewards or re-engagement discounts. Additionally, my analysis of monthly sales growth and user retention patterns helps LGS identify which seasons or product types are underperforming.
 
-##Improvements
+## Improvements
 Real-time Integration: Transition from static SQL/CSV dumps to a live data stream from the LGS Azure environment using Azure Data Factory for up-to-the-minute marketing insights.
 
 
