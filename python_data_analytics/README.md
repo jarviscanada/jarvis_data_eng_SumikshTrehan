@@ -47,7 +47,7 @@ Recency (Mean): 7.56 days
 Frequency (Mean): 19.34 purchases
 Monetary (Mean): £10,901.13
 
-Marketing Strategy: These are your most frequent and highest-spending customers who have shopped in the last week. Focus on Retention, not acquisition. Use VIP rewards, early access to new products, and personalized "thank you" gestures. They are your brand advocates; treat them like partners.
+Marketing Strategy: High-value engines of revenue. Prioritize retention over acquisition. Deploy VIP rewards, early access to new products, and personalized "thank you" gestures. Treat as brand advocates.
 
 2. Can't Lose
 RFM score: 255
@@ -56,7 +56,7 @@ Recency (Mean): 330.23 days
 Frequency (Mean): 15.93 purchases
 Monetary (Mean): £8,355.68
 
-Marketing Strategy: These were power users who have gone silent for nearly a year. Focus on Reactivation. Because they have a high lifetime value, they deserve aggressive win-back offers (deep discounts or "we miss you" gifts). You need to identify why they leftwas it a bad service experience or a competitor?
+Marketing Strategy: Former power users now silent for nearly a year. High risk of permanent churn. Use aggressive win-back offers like deep discounts or exclusive gifts. Identify if a service issue or competitor caused the departure.
 
 3. Hibernating
 Exact Stats:
@@ -66,7 +66,7 @@ Recency (Mean): 458.28 days
 Frequency (Mean): 1.25 purchases
 Monetary (Mean): £438.03
 
-Marketing Strategy: This is your largest group, but they are low-value and have been inactive for over 15 months. Focus on Resource Efficiency. Don't waste your primary marketing budget here. Use automated, low-cost email sequences or bulk seasonal promotions. If they don't respond to a "last chance" offer, they are effectively lost.
+Marketing Strategy: Largest group but lowest engagement and value. Inactive for over 15 months. Minimize marketing spend. Use automated email sequences or bulk seasonal promotions. If no response to a "last chance" offer, cease resource allocation.
 
 #### Marketing Signficance:
 Low Recency Value: Indicates an active, "fresh" customer who has purchased very recently. They should be targeted with loyalty rewards or new product announcements.
