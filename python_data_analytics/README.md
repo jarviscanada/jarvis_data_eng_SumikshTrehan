@@ -38,6 +38,36 @@ High Monetary: These are the "Whale" customers. Even if they shop less frequentl
 
 Low Monetary: These may be small retail hobbyists or customers who only buy clearance items.
 
+## Our Case RFM 
+
+1. Champions
+RFM Score: 545
+Count: 837 customers
+Recency (Mean): 7.56 days
+Frequency (Mean): 19.34 purchases
+Monetary (Mean): £10,901.13
+
+Marketing Strategy: These are your most frequent and highest-spending customers who have shopped in the last week. Focus on Retention, not acquisition. Use VIP rewards, early access to new products, and personalized "thank you" gestures. They are your brand advocates; treat them like partners.
+
+2. Can't Lose
+RFM score: 255
+Count: 71 customers
+Recency (Mean): 330.23 days
+Frequency (Mean): 15.93 purchases
+Monetary (Mean): £8,355.68
+
+Marketing Strategy: These were power users who have gone silent for nearly a year. Focus on Reactivation. Because they have a high lifetime value, they deserve aggressive win-back offers (deep discounts or "we miss you" gifts). You need to identify why they leftwas it a bad service experience or a competitor?
+
+3. Hibernating
+Exact Stats:
+RFM score: 212
+Count: 1,523 customers
+Recency (Mean): 458.28 days
+Frequency (Mean): 1.25 purchases
+Monetary (Mean): £438.03
+
+Marketing Strategy: This is your largest group, but they are low-value and have been inactive for over 15 months. Focus on Resource Efficiency. Don't waste your primary marketing budget here. Use automated, low-cost email sequences or bulk seasonal promotions. If they don't respond to a "last chance" offer, they are effectively lost.
+
 #### Marketing Signficance:
 Low Recency Value: Indicates an active, "fresh" customer who has purchased very recently. They should be targeted with loyalty rewards or new product announcements.
 
@@ -50,8 +80,6 @@ Low Frequency: Suggests "One-off" gift buyers or new customers who have not yet 
 For High Monetary: LGS should provide "White Glove Service." This includes dedicated account managers, early access to new stock, or bulk-buy discounts that aren't available to the general public.
 
 For Low Monetary: The goal here is to increase the Average Order Value (AOV). The marketing team can use "Upsell" strategies, such as "Free shipping on orders over £50" or "Recommended Add-ons" during the checkout process.
-
-
 
 By categorizing customers into segments like "Champions" or "At-Risk," I provide the marketing team with the exact list of users who need either loyalty rewards or re-engagement discounts. Additionally, my analysis of monthly sales growth and user retention patterns helps LGS identify which seasons or product types are underperforming.
 
