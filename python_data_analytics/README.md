@@ -26,35 +26,21 @@ The primary analytical framework used is RFM (Recency, Frequency, Monetary) segm
 2. Calculation: Derived from line_total ($Quantity \times UnitPrice$).
 3. Marketing Significance: Distinguishes between "Whale" customers (High M) and small retail hobbyists (Low M).
 
-## Our Case RFM 
+##  London Gift Shop RFM Segmentation and Market Significance
+| Segment | Count | Recency (Mean) | Frequency (Mean) | Monetary (Mean) | Customer Behaviour | Marketing Strategy |
+|--------|-------|----------------|------------------|-----------------|-------------------|-------------------|
+| Hibernating | 1,522 | 481.01 days | 1.25 | £437.96 | **Inactive & Low Value:** Long-term inactivity with minimal historical engagement and spending. | **Minimal Spend:** Use low-cost broad campaigns or automated last chance reminders. |
+| Loyal Customers | 1,147 | 89.31 days | 9.80 | £4,199.73 | **Consistent Backbones:** Frequent repeat buyers who demonstrate strong brand trust and reliable revenue. | **Retention & Upsell:** Reward loyalty with exclusive offers and personalized thank you gestures. |
+| Champions | 852 | 30.25 days | 19.21 | £10,795.52 | **The Whales:** Highly active, top spenders, and reliable brand advocates. | **VIP Treatment:** Prioritize with early access to new products and premium engagement programs. |
+| At Risk | 750 | 394.94 days | 3.90 | £1,383.60 | **Fading Value:** Previously valuable customers showing clear signs of long-term disengagement. | **Win-Back:** Run aggressive win-back campaigns with targeted, high-value incentives. |
+| Potential Loyalists | 713 | 47.30 days | 2.59 | £1,155.43 | **Growing Assets:** Recently engaged customers with high potential to become habitual buyers. | **Nurture:** Encourage repeat purchases via tailored recommendations and onboarding offers. |
+| About to Sleep | 388 | 128.62 days | 1.36 | £531.97 | **Early Churn Risk:** Activity is declining; they are on the verge of becoming inactive. | **Reactivation:** Deploy nudges, reminders, and limited-time incentives to spark activity. |
+| Need Attention | 269 | 135.24 days | 3.16 | £1,283.11 | **Momentum Loss:** Moderately engaged customers whose purchase frequency is slowing down. | **Stimulate:** Use personalized messaging to re-establish a consistent purchasing habit. |
+| Promising | 110 | 60.28 days | 1.00 | £324.50 | **Testing the Waters:** New or low-frequency buyers who have engaged recently. | **Onboarding:** Nurture with introductory offers to build a long-term relationship. |
+| Can't Lose | 71 | 352.80 days | 15.93 | £8,355.68 | **High-Value Churn:** Former Whale customers who have gone silent; high risk of permanent loss. | **High-Touch:** Aggressive retention with high-touch, highly personalized outreach or gifts. |
+| New Customers | 56 | 32.30 days | 1.00 | £356.26 | **Exploratory:** First-time buyers who have made a very recent initial purchase. | **Habit Building:** Integrate into welcome journeys to secure a second purchase. |
 
-1. Champions
-RFM Score: 545
-Count: 837 customers
-Recency (Mean): 7.56 days
-Frequency (Mean): 19.34 purchases
-Monetary (Mean): £10,901.13
 
-Marketing Strategy: High-value engines of revenue. Prioritize retention over acquisition. Deploy VIP rewards, early access to new products, and personalized "thank you" gestures. Treat as brand advocates.
-
-2. Can't Lose
-RFM score: 255
-Count: 71 customers
-Recency (Mean): 330.23 days
-Frequency (Mean): 15.93 purchases
-Monetary (Mean): £8,355.68
-
-Marketing Strategy: Former power users now silent for nearly a year. High risk of permanent churn. Use aggressive win-back offers like deep discounts or exclusive gifts. Identify if a service issue or competitor caused the departure.
-
-3. Hibernating
-Exact Stats:
-RFM score: 212
-Count: 1,523 customers
-Recency (Mean): 458.28 days
-Frequency (Mean): 1.25 purchases
-Monetary (Mean): £438.03
-
-Marketing Strategy: Largest group but lowest engagement and value. Inactive for over 15 months. Minimize marketing spend. Use automated email sequences or bulk seasonal promotions. If no response to a "last chance" offer, cease resource allocation.
 
 #### Marketing Signficance:
 Low Recency Value: Indicates an active, "fresh" customer who has purchased very recently. They should be targeted with loyalty rewards or new product announcements.
@@ -73,7 +59,6 @@ By categorizing customers into segments like "Champions" or "At-Risk," I provide
 
 ## Improvements
 Real-time Integration: Transition from static SQL/CSV dumps to a live data stream from the LGS Azure environment using Azure Data Factory for up-to-the-minute marketing insights.
-
 
 Predictive Analytics: Implement Machine Learning models to forecast future sales and predict customer churn, allowing the marketing team to act before a high-value wholesaler leaves.
 
