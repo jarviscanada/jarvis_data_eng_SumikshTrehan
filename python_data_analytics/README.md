@@ -7,6 +7,48 @@ Work and Technologies: I am developing an ETL (Extract, Transform, Load) and ana
 ## Project Architecture
 The architecture is designed to be decoupled from the LGS production environment to meet security requirements.It utilizes a Docker-based setup where a PostgreSQL container stores the sanitized transaction data, and a Jupyter container serves as the development interface. These containers communicate via a bridge network, allowing me to process the SQL dump provided by the LGS IT team without touching their live Azure cloud.
 
+#### Architecture Component Breakdown
+- Production Stack: LGS utilizes a high-availability Azure environment where a CDN handles the frontend, and an AKS Cluster (Kubernetes) manages microservices interacting with a live Azure SQL Server (OLTP).
+- The Data Bridge: To maintain security and stability, we do not connect directly to the cloud. Instead, we utilize a retail.sql dump to transition data from the production OLTP system to our local environment.
+- Containerized Analytics (Docker): Our environment runs two distinct Docker containers:
+    1. PostgreSQL (OLAP): Acts as the local data warehouse for all transformed retail data.
+    2. Jupyter Notebook: A specialized data science image (python-3.8.5) where we execute the ETL pipeline and RFM segmentation using Pandas and SQLAlchemy.
+
+## Architecture Diagram
+```mermaid
+graph LR
+    %% London Gift Shop Production Environment
+    subgraph LGS_Cloud [London Gift Shop: Azure Production]
+        direction TB
+        A[Browser] --> B[Azure CDN & Frontend]
+        B --> C[AKS Cluster: Microservices]
+        C <--> D[(Azure SQL Server: OLTP)]
+    end
+
+    %% Spacing gap
+    LGS_Cloud ~~~ Jarvis_PoC
+
+    %% Jarvis Data Engineering Analytical Environment
+    subgraph Jarvis_PoC [Jarvis Consulting: Analytical PoC]
+        direction TB
+        E[(PostgreSQL: OLAP Data Warehouse)]
+        F[Jupyter Notebook: Python 3.8.5]
+        G{Data Analytics: RFM}
+
+        F <-->|SQLAlchemy| E
+        F --- G
+    end
+
+    %% Data Export/Import Line
+    D -.->|retail.sql dump| E
+
+    %% Professional Styling
+    style LGS_Cloud fill:#f4f7f9,stroke:#2c3e50,stroke-width:2px,color:#2c3e50
+    style Jarvis_PoC fill:#fdfcf0,stroke:#d4ac0d,stroke-width:2px,color:#7d6608
+    style F fill:#e8f8f5,stroke:#1e8449,stroke-width:1px
+    style E fill:#f4ecf7,stroke:#7d3c98,stroke-width:1px
+```
+
 ## Data Analytics and Wrangling
 I am using the data to perform RFM (Recency, Frequency, Monetary) Segmentation, which is the primary strategy for increasing revenue.
 The primary analytical framework used is RFM (Recency, Frequency, Monetary) segmentation, which categorizes customers based on their historical behavior.
