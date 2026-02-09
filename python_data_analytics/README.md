@@ -50,7 +50,7 @@ graph LR
 ```
 
 ## Data Analytics and Wrangling
-I am using the data to perform RFM (Recency, Frequency, Monetary) Segmentation, which is the primary strategy for increasing revenue.
+I am using the data to perform analytics on over more than 1 million rows like monthly sales , monthly purchased vs cancelled orders , monthly sales report, monthly active users, monthly new and exisiting users, RFM (Recency, Frequency, Monetary) Segmentation, which is the primary strategy for increasing revenue.
 The primary analytical framework used is RFM (Recency, Frequency, Monetary) segmentation, which categorizes customers based on their historical behavior.
  
 #### Recency:
