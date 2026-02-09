@@ -17,6 +17,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SumikshTre
 
 **Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/linux_sql)]: Remote Host Monitoring Agent is a professional-grade, agent-based infrastructure monitoring system designed to automate the collection of hardware specifications and real-time resource telemetry from distributed Linux servers. By deploying lightweight Bash scripts on individual nodes, the system continuously pushes critical metricssuch as CPU, memory, and disk utilizationto a centralized PostgreSQL database hosted within Docker. This architecture eliminates the need for manual checks by utilizing Cron-based automation and SQL analytics, empowering System Administrators and DevOps Engineers to proactively monitor server health, identify performance bottlenecks, and drive informed scaling decisions through data-driven insights.
 
+**Advanced SQL** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/sql)]: This project features a suite of SQL scripts designed to transform raw relational data into actionable business intelligence within a multi-table environment comprising members, facilities, and bookings. The implementation utilizes advanced relational logic, including multi-table joins and correlated subqueries, to analyze facility utilization and member behavior patterns. By leveraging analytical window functions and complex aggregations, the project generates high-level reports on revenue distribution, membership growth, and resource allocation. These queries provide a robust framework for handling real-world data engineering tasks, focusing on query optimization and the extraction of precise, structured datasets for financial and operational reporting.
+
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/core_java)]:
       
   - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
@@ -25,7 +27,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SumikshTre
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/springboot)]: Not Started
 
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/python_data_anlytics)]: Not Started
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/python_data_anlytics)]: This project utilizes data analytics and wrangling techniques on a dataset of over one million rows to drive revenue growth through behavioral segmentation. By monitoring key metrics such as monthly sales, cancellation rates, and user acquisition (new vs. existing), the analysis provides a comprehensive overview of business performance. The core of the project is the RFM (Recency, Frequency, Monetary) Framework, which categorizes customers based on their historical transaction patterns to enable precision marketing. By calculating the time since the last purchase, the volume of unique transactions, and total revenue generated per user, the project identifies high-value Whales, loyal Habitual Buyers, and At-Risk and other customer segments, allowing for data-driven strategies to optimize customer lifetime value.
 
 **Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/hadoop)]: Not Started
 
