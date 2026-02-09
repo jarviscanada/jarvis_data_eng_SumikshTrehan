@@ -58,7 +58,7 @@ jarvis_projects:
     git_url: "/springboot"
     description: ""
   - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
+    git_url: "/python_data_analytics"
     description: 
       This project utilizes data analytics and wrangling techniques on a dataset of over one million rows to drive revenue growth through behavioral segmentation. By monitoring key metrics such as monthly sales, cancellation rates, and user acquisition (new vs. existing), the analysis provides a comprehensive overview of business performance. The core of the project is the RFM (Recency, Frequency, Monetary) Framework, which categorizes customers based on their historical transaction patterns to enable precision marketing. By calculating the time since the last purchase, the volume of unique transactions, and total revenue generated per user, the project identifies high-value Whales, loyal Habitual Buyers, and At-Risk and other customer segments, allowing for data-driven strategies to optimize customer lifetime value.
   - name: "Hadoop"
