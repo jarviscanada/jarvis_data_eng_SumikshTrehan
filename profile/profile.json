@@ -67,38 +67,9 @@
       "name": "Advanced SQL"
     },
     {
-      "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      ],
-      "git_url": "/core_java",
-      "name": "Core Java Apps"
-    },
-    {
-      "description": "",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
       "description": "This project utilizes data analytics and wrangling techniques on a dataset of over one million rows to drive revenue growth through behavioral segmentation. By monitoring key metrics such as monthly sales, cancellation rates, and user acquisition (new vs. existing), the analysis provides a comprehensive overview of business performance. The core of the project is the RFM (Recency, Frequency, Monetary) Framework, which categorizes customers based on their historical transaction patterns to enable precision marketing. By calculating the time since the last purchase, the volume of unique transactions, and total revenue generated per user, the project identifies high-value Whales, loyal Habitual Buyers, and At-Risk and other customer segments, allowing for data-driven strategies to optimize customer lifetime value.",
       "git_url": "/python_data_analytics",
       "name": "Python Data Analytics"
-    },
-    {
-      "description": "",
-      "git_url": "/hadoop",
-      "name": "Hadoop"
-    },
-    {
-      "description": "",
-      "git_url": "/spark",
-      "name": "Spark"
-    },
-    {
-      "description": "",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Sumiksh Trehan",
@@ -164,5 +135,5 @@
       "Docker"
     ]
   },
-  "summary": "Sumiksh is dynamic and results-oriented Power BI Developer and Data Analyst with a strong technical foundation in Software Development. Expert in transforming raw architectural and testing data into actionable insights by designing high-impact dashboards and engineering complex DAX queries to track critical metrics like POD velocity and defect density. In this comprehensive Business Intelligence project, he engineered a high-performance Power BI dashboard to analyze five decades of U.S. demographic shifts, transforming raw temporal data into a scalable Star Schema model. He implemented advanced Azure Maps integrations and hierarchical drill-down logic to enable seamless geospatial exploration from macro-regional trends down to granular metro-level densities. By developing complex DAX measures for time-series forecasting and year-over-year growth analysis, he provided stakeholders with a sophisticated analytical tool that balances deep technical data modeling with a clean, intuitive UI for strategic decision-making.\n\n* Expertise in DAX and Data Architecture: By developing complex DAX measures for time-series forecasting and year-over-year growth analysis, he provided stakeholders with a sophisticated analytical dashboard measuring the ticketing system perfomance at Ontario Public Service.\n\n* Domain-Specific QA Intelligence: With a comprehensive understanding of the SDLC and testing fundamentals for 4 goverment programs at Ontario Public Service, he doesn't just build dashboards but he also understands end to end project. He is uniquely capable of designing reporting suites that specifically track defect density and test execution health.\n\n* Agile Leadership and the PM Mindset: His experience working with Banking and Goverment allows him to bridge the gap between data and delivery. He facilitated daily stand-ups, identify POD blockers, and drive team velocity, ensuring data directly supports project timelines.\n\n* Proven Record of Optimization: He has a demonstrated history of increasing reporting efficiency by 20% through automation during his previous work experience.\n"
+  "summary": "Sumiksh is dynamic and results-oriented Power BI Developer and Data Analyst with a strong technical foundation in Software Development. Expert in transforming raw architectural and testing data into actionable insights by designing high-impact dashboards and engineering complex DAX queries to track critical metrics like POD velocity and defect density.\n\n* Expertise in DAX \u0026 Data Architecture: He engineers sophisticated Power BI solutions using complex DAX measures and Star Schema modeling to deliver high-performance analytics, such as his ticketing system dashboard and U.S. demographic projects.\n\n* Domain-Specific QA Intelligence: Leveraging deep STLC expertise from major government programs, he architects reporting suites that track critical metrics like defect density and test execution health to provide end-to-end project visibility.\n\n* Agile Leadership \u0026 PM Mindset: Drawing on his experience in banking and government, he bridges the gap between technical data and delivery by facilitating stand-ups, removing POD blockers, and optimizing team velocity.\n\n* Proven Record of Optimization: He has a demonstrated history of driving operational efficiency, notably increasing reporting speeds by 20% through strategic automation and streamlined data workflows.\n"
 }

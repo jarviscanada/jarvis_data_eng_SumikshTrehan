@@ -6,15 +6,15 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_SumikshTre
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
 summary: |
-  Sumiksh is dynamic and results-oriented Power BI Developer and Data Analyst with a strong technical foundation in Software Development. Expert in transforming raw architectural and testing data into actionable insights by designing high-impact dashboards and engineering complex DAX queries to track critical metrics like POD velocity and defect density. In this comprehensive Business Intelligence project, he engineered a high-performance Power BI dashboard to analyze five decades of U.S. demographic shifts, transforming raw temporal data into a scalable Star Schema model. He implemented advanced Azure Maps integrations and hierarchical drill-down logic to enable seamless geospatial exploration from macro-regional trends down to granular metro-level densities. By developing complex DAX measures for time-series forecasting and year-over-year growth analysis, he provided stakeholders with a sophisticated analytical tool that balances deep technical data modeling with a clean, intuitive UI for strategic decision-making.
-  
-  * Expertise in DAX and Data Architecture: By developing complex DAX measures for time-series forecasting and year-over-year growth analysis, he provided stakeholders with a sophisticated analytical dashboard measuring the ticketing system perfomance at Ontario Public Service.
+  Sumiksh is dynamic and results-oriented Power BI Developer and Data Analyst with a strong technical foundation in Software Development. Expert in transforming raw architectural and testing data into actionable insights by designing high-impact dashboards and engineering complex DAX queries to track critical metrics like POD velocity and defect density.
 
-  * Domain-Specific QA Intelligence: With a comprehensive understanding of the SDLC and testing fundamentals for 4 goverment programs at Ontario Public Service, he doesn't just build dashboards but he also understands end to end project. He is uniquely capable of designing reporting suites that specifically track defect density and test execution health.
+  * Expertise in DAX & Data Architecture: He engineers sophisticated Power BI solutions using complex DAX measures and Star Schema modeling to deliver high-performance analytics, such as his ticketing system dashboard and U.S. demographic projects.
 
-  * Agile Leadership and the PM Mindset: His experience working with Banking and Goverment allows him to bridge the gap between data and delivery. He facilitated daily stand-ups, identify POD blockers, and drive team velocity, ensuring data directly supports project timelines.
+  * Domain-Specific QA Intelligence: Leveraging deep STLC expertise from major government programs, he architects reporting suites that track critical metrics like defect density and test execution health to provide end-to-end project visibility.
 
-  * Proven Record of Optimization: He has a demonstrated history of increasing reporting efficiency by 20% through automation during his previous work experience.
+  * Agile Leadership & PM Mindset: Drawing on his experience in banking and government, he bridges the gap between technical data and delivery by facilitating stand-ups, removing POD blockers, and optimizing team velocity.
+
+  * Proven Record of Optimization: He has a demonstrated history of driving operational efficiency, notably increasing reporting speeds by 20% through strategic automation and streamlined data workflows.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -58,30 +58,10 @@ jarvis_projects:
     description:
      This project features a suite of SQL scripts designed to transform raw relational data into actionable business intelligence within a multi-table environment comprising members, facilities, and bookings. The implementation utilizes advanced relational logic, including multi-table joins and correlated subqueries, to analyze facility utilization and member behavior patterns. By leveraging analytical window functions and complex aggregations, the project generates high-level reports on revenue distribution, membership growth, and resource allocation. These queries provide a robust framework for handling real-world data engineering tasks, focusing on query optimization and the extraction of precise, structured datasets for financial and operational reporting.
 
-  - name: "Core Java Apps"
-    git_url: "/core_java"
-    description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
   - name: "Python Data Analytics"
     git_url: "/python_data_analytics"
     description: 
       This project utilizes data analytics and wrangling techniques on a dataset of over one million rows to drive revenue growth through behavioral segmentation. By monitoring key metrics such as monthly sales, cancellation rates, and user acquisition (new vs. existing), the analysis provides a comprehensive overview of business performance. The core of the project is the RFM (Recency, Frequency, Monetary) Framework, which categorizes customers based on their historical transaction patterns to enable precision marketing. By calculating the time since the last purchase, the volume of unique transactions, and total revenue generated per user, the project identifies high-value Whales, loyal Habitual Buyers, and At-Risk and other customer segments, allowing for data-driven strategies to optimize customer lifetime value.
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
-
-# List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
   - name: "US Population Analysis"
