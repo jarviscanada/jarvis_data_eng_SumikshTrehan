@@ -1,10 +1,19 @@
 # Sumiksh Trehan . Jarvis Consulting
 
-I am a Software Developer and Data Analyst with an academic foundation consisting of an Honours Bachelor of Technology in Software Development and a Computer Programming Diploma from Seneca Polytechnic, alongside an Electrical Engineering Diploma from Georgian College. Professionally, I increased data reporting speed by 85% at Ontario Public Services by engineering Python automation scripts , and I built Kotlin-based mobile features and Adobe Analytics integrations as an Android Developer at CIBC. My experience extends to Claret Asset Management, where I modernized infrastructure by migrating legacy SSIS workflows to Python ETL pipelines on Azure , and Canada's Wonderland, where I secured network infrastructure and maintained over 2,000 POS endpoints.
+Sumiksh is dynamic and results-oriented Power BI Developer and Data Analyst with a strong technical foundation in Software Development. Expert in transforming raw architectural and testing data into actionable insights by designing high-impact dashboards and engineering complex DAX queries to track critical metrics like POD velocity and defect density. In this comprehensive Business Intelligence project, he engineered a high-performance Power BI dashboard to analyze five decades of U.S. demographic shifts, transforming raw temporal data into a scalable Star Schema model. He implemented advanced Azure Maps integrations and hierarchical drill-down logic to enable seamless geospatial exploration from macro-regional trends down to granular metro-level densities. By developing complex DAX measures for time-series forecasting and year-over-year growth analysis, he provided stakeholders with a sophisticated analytical tool that balances deep technical data modeling with a clean, intuitive UI for strategic decision-making.
+
+*Expertise in DAX and Data Architecture**: He brings a sophisticated technical background in engineering Python-based ETL pipelines and migrating legacy workflows to Azure. This ensures he can develop complex DAX measures and robust data models that provide deep analytical depth beyond simple visualizations.
+
+*Domain-Specific QA Intelligence: With a comprehensive understanding of the STLC and manual testing fundamentals, he doesn't just build dashboards but he aloalso translates technical requirments into actionable insights. He is uniquely capable of designing reporting suites that specifically track defect density and test execution health.
+
+*Agile Leadership and the PM Mindset: His experience working with Banking and Goverment allows him to bridge the gap between data and delivery. He uses Power BI as a functional tool to facilitate daily stand-ups, identify POD blockers, and drive team velocity, ensuring data directly supports project timelines.
+
+*Proven Record of Optimization: He has a demonstrated history of increasing reporting efficiency by 85% through automation. This track record proves he can optimize the entire data lifecycle, from securing network endpoints to delivering high-level executive reports in fast-paced environments.
+
 
 ## Skills
 
-**Proficient:** JavaScript (Next JS, React, Node.JS), Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, GCP, Docker
+**Proficient:** Power BI, Tableau, JavaScript (Next JS, React, Node.JS), Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, GCP, Docker
 
 **Competent:** Next.js, React, Azure(Cloud, Data Factory), Kotlin/Android Development, ETL Pipelines(Python, SSIS)
 
@@ -37,7 +46,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SumikshTre
 
 
 ## Highlighted Projects
-**Web Porfolio** [[GitHub](https://github.com/Sumiksh/sumikshtportfolio.git)]: Built a modern, theme-aware portfolio using Next.js, Tailwind CSS, and Three.js featuring a chatbot UI for resume-related Q&A and interactive portfolio cards.
+**US Population Analysis** [[GitHub](git@github.com:Sumiksh/Power_BI_US-Population-Analysis.git)]: This Power BI reporting solution delivers a high-level longitudinal analysis of United States demographic trends from 1970 to 2022. By integrating Azure Maps with OpenStreetMap (OSM) and TomTom layers, the dashboard provides a sophisticated geospatial interface for exploring population distribution across regions, states, and metro areas.
+
+**Web Portfolio** [[GitHub](https://github.com/Sumiksh/sumikshtportfolio.git)]: Built a modern, theme-aware portfolio using Next.js, Tailwind CSS, and Three.js featuring a chatbot UI for resume-related Q&A and interactive portfolio cards.
 
 **Pill Scheduler** [[GitHub](https://github.com/Sumiksh/PillReminders.git)]: Engineered a medication tracker using Next.js 15, Firebase, and Gemini 2.5 Flash for AI visual pill verification while integrating RxCUI identifiers to fetch real-time drug precautions.
 
