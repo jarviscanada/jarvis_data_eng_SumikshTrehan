@@ -43,6 +43,7 @@ public class JavaGrepImp implements JavaGrep {
     List<String> matchedLines = new ArrayList<>();
     // Step-by-step workflow: Find files -> Read lines -> Match pattern -> Save
     for (File file : listFiles(getRootPath())) {
+      logger.info("get Root Path: {}", getRootPath());
       logger.info("Processing file: {}", file.getName());
       for (String line : readLines(file)) {
         if (containsPattern(line)) {
@@ -50,6 +51,7 @@ public class JavaGrepImp implements JavaGrep {
         }
       }
     }
+    logger.info("Matched lines found: {}", matchedLines);
     writeToFile(matchedLines);
   }
 
@@ -68,6 +70,7 @@ public class JavaGrepImp implements JavaGrep {
       for (File file : files) {
         if (file.isDirectory()) {
           // Recursively search sub-directories
+          logger.info("Diving into directory: {}", file.getAbsolutePath());
           fileList.addAll(listFiles(file.getAbsolutePath()));
         } else {
           fileList.add(file);
@@ -99,6 +102,7 @@ public class JavaGrepImp implements JavaGrep {
   @Override
   public boolean containsPattern(String line) {
     // Matches the line against the user-provided regex
+    //logger.info(String.valueOf(Pattern.compile(getRegex()).matcher(line).find()));
     return Pattern.compile(getRegex()).matcher(line).find();
   }
 
@@ -108,6 +112,7 @@ public class JavaGrepImp implements JavaGrep {
     // Use BufferedWriter and FileWriter to save the results
     try (BufferedWriter bw = new BufferedWriter(new FileWriter(out))) {
       for (String line : lines) {
+        logger.info("Writing line to file: {}", line);
         bw.write(line);
         bw.newLine();
       }
