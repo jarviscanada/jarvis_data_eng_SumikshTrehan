@@ -22,7 +22,7 @@ class LambdaStreamImpTest {
   @Test
   void createStrStream() {
     Stream<String> stream = lse.createStrStream("a", "b", "c");
-    List<String> result = stream.collect(Collectors.toList());
+    List<String> result = stream.peek(s -> System.out.println("Item: " + s)).collect(Collectors.toList());
     assertEquals(3, result.size());
     assertEquals("b", result.get(1));
   }
