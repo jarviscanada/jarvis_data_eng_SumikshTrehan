@@ -55,10 +55,11 @@ public class JavaGrepLambdaImpStandard extends JavaGrepImp {
     try (Stream<Path> pathStream = Files.walk(Paths.get(rootDir))) {
       return pathStream
           .filter(Files::isRegularFile)
+          .peek(path -> logger.info("Match found for processing JavaGrepLambdaImpStandard: {}", path.getFileName()))
           .map(Path::toFile)
           .collect(Collectors.toList());
     } catch (IOException e) {
-      throw new RuntimeException("Failed to walk directory: " + rootDir, e);
+      throw new RuntimeException("Failed to walk directory JavaGrepLambdaImpStandard: " + rootDir, e);
     }
   }
 
