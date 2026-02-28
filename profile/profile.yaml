@@ -62,7 +62,13 @@ jarvis_projects:
     git_url: "/python_data_analytics"
     description: 
       This project utilizes data analytics and wrangling techniques on a dataset of over one million rows to drive revenue growth through behavioral segmentation. By monitoring key metrics such as monthly sales, cancellation rates, and user acquisition (new vs. existing), the analysis provides a comprehensive overview of business performance. The core of the project is the RFM (Recency, Frequency, Monetary) Framework, which categorizes customers based on their historical transaction patterns to enable precision marketing. By calculating the time since the last purchase, the volume of unique transactions, and total revenue generated per user, the project identifies high-value Whales, loyal Habitual Buyers, and At-Risk and other customer segments, allowing for data-driven strategies to optimize customer lifetime value.
-# Feel free to add more projects
+
+  - name: "Core Java"
+    git_url: "/core_java"
+    description:
+      The Java Grep App is a command-line search utility developed in Java 8 that replicates the core functionality of the Linux grep tool by recursively scanning directories for specific text patterns. The project demonstrates a transition from traditional imperative programming to a modern functional approach, utilizing Lambdas and the Stream API to build efficient data processing pipelines. By integrating the SLF4J logging framework and Maven for dependency management, the application provides a robust environment for filtering large volumes of text data using Regular Expressions. Designed with scalability in mind, it addresses common performance bottlenecks like memory management through lazy evaluation, ensuring it can handle complex file structures within a Dockerized container environment.
+
+      # Feel free to add more projects
 highlighted_projects:
   - name: "US Population Analysis"
     git_url: "git@github.com:Sumiksh/Power_BI_US-Population-Analysis.git"
