@@ -1,10 +1,19 @@
 # Sumiksh Trehan . Jarvis Consulting
 
-I am a Software Developer and Data Analyst with an academic foundation consisting of an Honours Bachelor of Technology in Software Development and a Computer Programming Diploma from Seneca Polytechnic, alongside an Electrical Engineering Diploma from Georgian College. Professionally, I increased data reporting speed by 85% at Ontario Public Services by engineering Python automation scripts , and I built Kotlin-based mobile features and Adobe Analytics integrations as an Android Developer at CIBC. My experience extends to Claret Asset Management, where I modernized infrastructure by migrating legacy SSIS workflows to Python ETL pipelines on Azure , and Canada's Wonderland, where I secured network infrastructure and maintained over 2,000 POS endpoints.
+Sumiksh is dynamic and results-oriented Power BI Developer and Data Analyst with a strong technical foundation in Software Development. Expert in transforming raw architectural and testing data into actionable insights by designing high-impact dashboards and engineering complex DAX queries to track critical metrics like POD velocity and defect density.
+
+* Expertise in DAX & Data Architecture: He engineers sophisticated Power BI solutions using complex DAX measures and Star Schema modeling to deliver high-performance analytics, such as his ticketing system dashboard and U.S. demographic projects.
+
+* Domain-Specific QA Intelligence: Leveraging deep STLC expertise from major government programs, he architects reporting suites that track critical metrics like defect density and test execution health to provide end-to-end project visibility.
+
+* Agile Leadership & PM Mindset: Drawing on his experience in banking and government, he bridges the gap between technical data and delivery by facilitating stand-ups, removing POD blockers, and optimizing team velocity.
+
+* Proven Record of Optimization: He has a demonstrated history of driving operational efficiency, notably increasing reporting speeds by 20% through strategic automation and streamlined data workflows.
+
 
 ## Skills
 
-**Proficient:** JavaScript (Next JS, React, Node.JS), Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, GCP, Docker
+**Proficient:** Power BI, Tableau, JavaScript (Next JS, React, Node.JS), Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, GCP, Docker
 
 **Competent:** Next.js, React, Azure(Cloud, Data Factory), Kotlin/Android Development, ETL Pipelines(Python, SSIS)
 
@@ -19,25 +28,15 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SumikshTre
 
 **Advanced SQL** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/sql)]: This project features a suite of SQL scripts designed to transform raw relational data into actionable business intelligence within a multi-table environment comprising members, facilities, and bookings. The implementation utilizes advanced relational logic, including multi-table joins and correlated subqueries, to analyze facility utilization and member behavior patterns. By leveraging analytical window functions and complex aggregations, the project generates high-level reports on revenue distribution, membership growth, and resource allocation. These queries provide a robust framework for handling real-world data engineering tasks, focusing on query optimization and the extraction of precise, structured datasets for financial and operational reporting.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/springboot)]: Not Started
-
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/python_data_analytics)]: This project utilizes data analytics and wrangling techniques on a dataset of over one million rows to drive revenue growth through behavioral segmentation. By monitoring key metrics such as monthly sales, cancellation rates, and user acquisition (new vs. existing), the analysis provides a comprehensive overview of business performance. The core of the project is the RFM (Recency, Frequency, Monetary) Framework, which categorizes customers based on their historical transaction patterns to enable precision marketing. By calculating the time since the last purchase, the volume of unique transactions, and total revenue generated per user, the project identifies high-value Whales, loyal Habitual Buyers, and At-Risk and other customer segments, allowing for data-driven strategies to optimize customer lifetime value.
 
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/cloud_devops)]: Not Started
+**Core Java** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_SumikshTrehan/tree/master/core_java)]: The Java Grep App is a command-line search utility developed in Java 8 that replicates the core functionality of the Linux grep tool by recursively scanning directories for specific text patterns. The project demonstrates a transition from traditional imperative programming to a modern functional approach, utilizing Lambdas and the Stream API to build efficient data processing pipelines. By integrating the SLF4J logging framework and Maven for dependency management, the application provides a robust environment for filtering large volumes of text data using Regular Expressions. Designed with scalability in mind, it addresses common performance bottlenecks like memory management through lazy evaluation, ensuring it can handle complex file structures within a Dockerized container environment.
 
 
 ## Highlighted Projects
-**Web Porfolio** [[GitHub](https://github.com/Sumiksh/sumikshtportfolio.git)]: Built a modern, theme-aware portfolio using Next.js, Tailwind CSS, and Three.js featuring a chatbot UI for resume-related Q&A and interactive portfolio cards.
+**US Population Analysis** [[GitHub](git@github.com:Sumiksh/Power_BI_US-Population-Analysis.git)]: This Power BI reporting solution delivers a high-level longitudinal analysis of United States demographic trends from 1970 to 2022. By integrating Azure Maps with OpenStreetMap (OSM) and TomTom layers, the dashboard provides a sophisticated geospatial interface for exploring population distribution across regions, states, and metro areas.
+
+**Web Portfolio** [[GitHub](https://github.com/Sumiksh/sumikshtportfolio.git)]: Built a modern, theme-aware portfolio using Next.js, Tailwind CSS, and Three.js featuring a chatbot UI for resume-related Q&A and interactive portfolio cards.
 
 **Pill Scheduler** [[GitHub](https://github.com/Sumiksh/PillReminders.git)]: Engineered a medication tracker using Next.js 15, Firebase, and Gemini 2.5 Flash for AI visual pill verification while integrating RxCUI identifiers to fetch real-time drug precautions.
 
