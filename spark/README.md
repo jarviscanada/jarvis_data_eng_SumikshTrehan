@@ -43,13 +43,13 @@ The system follows a distributed data processing architecture using Hadoop and S
 ```mermaid
 flowchart TD
 
-A[Apache Zeppelin Notebook UI] --> B[Spark Driver (Dataproc Master)]
+A[Apache Zeppelin Notebook UI] --> B[Spark Driver - Dataproc Master]
 
-B --> C1[Executor 1 (Worker Node)]
-B --> C2[Executor 2 (Worker Node)]
-B --> C3[Executor N (Worker Node)]
+B --> C1[Executor 1 - Worker Node]
+B --> C2[Executor 2 - Worker Node]
+B --> C3[Executor N - Worker Node]
 
-C1 --> D[Storage Layer (GCS / HDFS - Parquet)]
+C1 --> D[Storage Layer - GCS or HDFS Parquet]
 C2 --> D
 C3 --> D
 
@@ -60,7 +60,6 @@ E --> B
 
 B --> A
 ```
-
 
 
 
