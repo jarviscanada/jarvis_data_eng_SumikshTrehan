@@ -35,3 +35,72 @@ To get started with this project, you need to install PySpark and other required
 - Java 8 or higher
 - Apache Spark (PySpark)
 - Jupyter Notebook (optional but recommended for easier interaction)
+
+### Zeppelin notebook queries 
+## PySpark Query
+
+## Fetching GDP Growth Data using PySpark
+
+```python
+df = spark.sql("""
+    SELECT * FROM wdi_csv_parquet 
+    WHERE countryname='Canada' 
+    AND indicatorcode='NY.GDP.MKTP.KD.ZG'
+""")
+
+z.show(df)
+```
+
+## Fetching canada growth year by year
+
+```python
+wdi_canada_df = spark.sql("""
+SELECT year, indicatorvalue
+FROM wdi_csv_parquet
+WHERE TRIM(indicatorcode) = 'NY.GDP.MKTP.KD.ZG' 
+AND LOWER(TRIM(countryname)) = 'canada'
+ORDER BY year
+""")
+
+z.show(wdi_canada_df.select("year", "indicatorvalue"))
+``` 
+
+## Fetching GDP Growth Data for All Countries (Distributed and Sorted)
+
+```python
+wdi_all_countries_df = spark.sql("""
+SELECT countryname,
+       year,
+       indicatorcode,
+       indicatorvalue
+FROM wdi_csv_parquet
+WHERE TRIM(indicatorcode) = 'NY.GDP.MKTP.KD.ZG'
+DISTRIBUTE BY countryname
+SORT BY countryname, year
+""")
+
+z.show(wdi_all_countries_df.select("countryname", "year", "indicatorcode", "indicatorvalue"))
+```
+
+## Finding Maximum GDP Growth Year for Each Country
+
+```python
+wdi_max_gdp_df = spark.sql("""
+SELECT wdi_csv_parquet.indicatorvalue AS value, 
+       wdi_csv_parquet.year AS year, 
+       wdi_csv_parquet.countryname AS country 
+FROM (
+    SELECT MAX(indicatorvalue) AS ind, countryname 
+    FROM wdi_csv_parquet 
+    WHERE indicatorcode = 'NY.GDP.MKTP.KD.ZG' 
+    AND indicatorvalue <> 0 
+    GROUP BY countryname
+) t1 
+INNER JOIN wdi_csv_parquet 
+ON t1.ind = wdi_csv_parquet.indicatorvalue 
+AND t1.countryname = wdi_csv_parquet.countryname
+""")
+
+z.show(wdi_max_gdp_df.select("country", "year", "value"))
+```
+
