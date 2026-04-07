@@ -1,40 +1,68 @@
 # Retail Data Analytics with PySpark (Databricks)
 
-## Project Overview
+# Zeppelin and Hadoop Implementation
 
-The *Retail Data Analytics with PySpark* project is focused on analyzing large-scale retail datasets to extract valuable insights that can guide decision-making in the retail industry. Using PySpark, a Python library for Apache Spark, this project efficiently handles big data, providing insights into sales performance, customer behavior, and key business metrics.
+## Dataset and Analytics Work
 
-## Key Goals of the Project
+This project analyzes **GDP growth data** using the `wdi_csv_parquet` dataset, which is derived from the World Development Indicators (WDI). The dataset is stored in **Parquet format**, enabling efficient distributed querying.
 
-1. **Data Exploration and Preprocessing**:
-   - The project starts by loading retail data into PySpark's DataFrame format, exploring the structure and content of the data (e.g., checking for missing values, duplicates, and inconsistencies).
-   - Data cleaning is performed by handling missing values, converting data types, and removing irrelevant or incorrect records to ensure accurate analysis.
+The analytics work was performed using **Apache Zeppelin with PySpark** on a Hadoop-based cluster (Google Cloud Dataproc). The following key analyses were conducted:
 
-2. **Sales Analysis**:
-   - A key focus of the project is to analyze sales data across various dimensions (e.g., time periods, geographic locations, product categories).
-   - Metrics such as **total sales**, **average sales per product**, **total revenue**, and **sales trends over time** are calculated, helping to identify high-performing products and sales patterns.
+- Extracting GDP growth data for Canada
+- Cleaning and standardizing string fields (using `TRIM`, `LOWER`)
+- Ordering GDP growth data year-wise
+- Extracting GDP growth data for all countries
+- Performing distributed sorting and partitioning using `DISTRIBUTE BY` and `SORT BY`
+- Identifying the year of maximum GDP growth for each country
 
-3. **Product and Customer Insights**:
-   - Product performance is calculated by aggregating sales data, identifying top-selling products, their categories, and sales behavior.
-   - Customer behavior is analyzed by grouping data based on purchasing patterns, frequency of purchases, and product preferences, helping to identify trends in customer choices and loyalty.
+These queries leverage **Spark SQL** and are executed in a distributed manner across the cluster.
 
-4. **Business Metrics**:
-   - Key performance indicators (KPIs) such as **Sales Growth**, **Revenue per Customer**, and **Profit Margins** are calculated.
-   - These KPIs help businesses understand financial health and optimize inventory management, pricing strategies, and customer engagement.
+> ?? Zeppelin notebook link: *(Add your exported notebook or Git link here)*
 
-5. **Data Visualization**:
-   - The project generates visualizations to summarize the findings in a clear and interpretable way, including sales distribution by category, seasonal trends, and customer demographics. This helps stakeholders make data-driven decisions.
+---
 
-## Installation
+## Architecture
 
-To get started with this project, you need to install PySpark and other required libraries. Follow the steps below to set up your environment:
+The system follows a distributed data processing architecture using Hadoop and Spark:
 
-### Prerequisites
+- **Data Source**: WDI dataset stored in Parquet format (on Google Cloud Storage or HDFS)
+- **Processing Engine**: Apache Spark (via PySpark)
+- **Notebook Interface**: Apache Zeppelin
+- **Cluster Management**: Google Cloud Dataproc (Hadoop + Spark cluster)
+- **Storage Layer**: HDFS / Google Cloud Storage
+- **Metadata Layer**: Hive Metastore (for table `wdi_csv_parquet`)
+- **Execution Flow**:
+  1. Zeppelin sends PySpark queries
+  2. Spark Driver processes query plan
+  3. Tasks distributed across worker nodes
+  4. Results returned to Zeppelin (`z.show()`)
 
-- Python 3.x
-- Java 8 or higher
-- Apache Spark (PySpark)
-- Jupyter Notebook (optional but recommended for easier interaction)
+---
+
+## Architecture Diagram
+```mermaid
+flowchart TD
+
+A[Apache Zeppelin Notebook UI] --> B[Spark Driver (Dataproc Master)]
+
+B --> C1[Executor 1 (Worker Node)]
+B --> C2[Executor 2 (Worker Node)]
+B --> C3[Executor N (Worker Node)]
+
+C1 --> D[Storage Layer (GCS / HDFS - Parquet)]
+C2 --> D
+C3 --> D
+
+B --> E[Hive Metastore]
+
+D --> B
+E --> B
+
+B --> A
+```
+
+
+
 
 ### Zeppelin notebook queries 
 ## PySpark Query
