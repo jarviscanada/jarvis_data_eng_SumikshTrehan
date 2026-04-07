@@ -1,43 +1,97 @@
-# Retail Data Analytics with PySpark (Databricks)
+# Introduction
+
+## Business Context
+This project analyzes large-scale economic and retail data to extract insights such as GDP trends and transaction patterns using distributed processing.
+
+## Work and Technologies
+Analysis was performed using **PySpark** on:
+- **Apache Zeppelin (Google Cloud Dataproc - Hadoop)**
+- **Azure Databricks**
+
+Datasets:
+- GDP data (WDI)
+- Retail transactions
+
+Technologies:
+- Spark SQL, PySpark  
+- Zeppelin, Databricks  
+- Hadoop, Azure  
+- Hive Metastore, Parquet
+
+# Databricks and Hadoop Implementation
+
+## Dataset and Analytics
+Analyzed retail transaction data (`retail` table) using **PySpark in Databricks**.
+
+Key tasks:
+- Loaded data from Hive Metastore (`jarvis_training.default.retail`)
+- Renamed and cleaned columns
+- Created derived fields (`line_item_total`, `year_month`)
+- Identified cancelled orders
+- Monthly aggregation of orders
+- Invoice-level aggregation (total invoice amount)
+- Distribution analysis using percentiles (85th quantile)
+- Converted Spark DataFrames to Pandas for visualization
+
+Notebook link: spark/notebook/Retail Data Analytics with PySpark.ipynb
+---
+
+## Architecture
+- **Platform**: Azure Databricks  
+- **Compute**: Apache Spark (PySpark)  
+- **Storage**: DBFS / Azure Data Lake Storage  
+- **Metadata**: Hive Metastore  
+- **Processing Flow**:  
+  Databricks Notebook ? Spark Driver ? Executors (parallel processing) ? DBFS / ADLS ? Results ? Visualization (Pandas/Matplotlib)
+
+---
+
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+
+A[Databricks Notebook] --> B[Spark Driver]
+
+B --> C1[Executor 1]
+B --> C2[Executor 2]
+B --> C3[Executor N]
+
+C1 --> D[DBFS or Azure Storage]
+C2 --> D
+C3 --> D
+
+B --> E[Hive Metastore]
+
+D --> B
+E --> B
+
+B --> F[Visualization - Pandas Matplotlib]
+```
 
 # Zeppelin and Hadoop Implementation
+## Dataset and Analytics
+Analyzed GDP growth data (`wdi_csv_parquet`) from World Development Indicators using **PySpark in Apache Zeppelin** on **Google Cloud Dataproc**.
 
-## Dataset and Analytics Work
-
-This project analyzes **GDP growth data** using the `wdi_csv_parquet` dataset, which is derived from the World Development Indicators (WDI). The dataset is stored in **Parquet format**, enabling efficient distributed querying.
-
-The analytics work was performed using **Apache Zeppelin with PySpark** on a Hadoop-based cluster (Google Cloud Dataproc). The following key analyses were conducted:
-
-- Extracting GDP growth data for Canada
-- Cleaning and standardizing string fields (using `TRIM`, `LOWER`)
-- Ordering GDP growth data year-wise
-- Extracting GDP growth data for all countries
-- Performing distributed sorting and partitioning using `DISTRIBUTE BY` and `SORT BY`
-- Identifying the year of maximum GDP growth for each country
-
-These queries leverage **Spark SQL** and are executed in a distributed manner across the cluster.
-
-> ?? Zeppelin notebook link: *(Add your exported notebook or Git link here)*
+Key tasks:
+- Filtered Canada GDP growth
+- Cleaned data (`TRIM`, `LOWER`)
+- Year-wise ordering
+- All-country GDP extraction
+- Distributed sorting (`DISTRIBUTE BY`, `SORT BY`)
+- Max GDP growth year per country
 
 ---
 
 ## Architecture
+- **UI**: Apache Zeppelin  
+- **Compute**: Apache Spark (PySpark)  
+- **Cluster**: Google Cloud Dataproc (Hadoop)  
+- **Storage**: GCS / HDFS (Parquet)  
+- **Metadata**: Hive Metastore  
 
-The system follows a distributed data processing architecture using Hadoop and Spark:
+**Flow**: Zeppelin ? Spark Driver ? Executors (parallel) ? Storage ? Result back to Zeppelin
 
-- **Data Source**: WDI dataset stored in Parquet format (on Google Cloud Storage or HDFS)
-- **Processing Engine**: Apache Spark (via PySpark)
-- **Notebook Interface**: Apache Zeppelin
-- **Cluster Management**: Google Cloud Dataproc (Hadoop + Spark cluster)
-- **Storage Layer**: HDFS / Google Cloud Storage
-- **Metadata Layer**: Hive Metastore (for table `wdi_csv_parquet`)
-- **Execution Flow**:
-  1. Zeppelin sends PySpark queries
-  2. Spark Driver processes query plan
-  3. Tasks distributed across worker nodes
-  4. Results returned to Zeppelin (`z.show()`)
-
----
 
 ## Architecture Diagram
 ```mermaid
